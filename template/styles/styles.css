@@ -1,0 +1,118 @@
+:root {
+  --primary-color: #7B7F32;
+  --secondary-color: #C5AECF;
+  --background-color: #EFEBE7;
+  --text-color: #27272A;
+  --white: #ffffff;
+  --font-main: 'Quicksand', sans-serif;
+  --font-heading: 'Fredoka', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--background-color);
+  box-shadow: 0 1px 10px rgba(0,0,0,0.05);
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--primary-color);
+}
+
+.hero {
+  padding: 6rem 2rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  gap: 3rem;
+}
+
+.hero-texto h1 {
+  font-family: var(--font-heading);
+  font-size: 3.2rem;
+  color: var(--primary-color);
+}
+
+.cta {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta:hover {
+  background-color: #5e642b;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+footer {
+  background-color: var(--secondary-color);
+  color: var(--white);
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+footer h3 {
+  font-family: var(--font-heading);
+  margin-bottom: 1rem;
+}
+
+.social a {
+  font-size: 2rem;
+  margin: 0 0.5rem;
+  color: var(--white);
+  transition: color 0.3s ease;
+}
+
+.social a:hover {
+  color: var(--text-color);
+}
